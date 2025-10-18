@@ -126,12 +126,13 @@
       </div>
 
       <!-- LOGIN FORM -->
-      <form id="login-form" method="post" action='/auth/login/'>{% csrf_token %}
+      <form id="login-form" method="post" action='/auth/login/'>
+        {% csrf_token %}
         <label for="login-email">Phone</label>
         <input id="login-email" name="phone" type="text" placeholder="+998911234567" value="+998" required>
 
         <label for="login-password">Parol</label>
-        <div class="row"><div class="col"><input id="login-password" name=" password" type="password" placeholder="Parol" required></div>
+        <div class="row"><div class="col"><input id="login-password" name="password" type="password" placeholder="Parol" required></div>
           <div style="display:flex;align-items:center"><button type="button" class="secondary" id="login-show">Show</button></div>
         </div>
 
